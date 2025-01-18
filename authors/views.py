@@ -4,7 +4,7 @@ from .models import AuthorsModel
 
 
 def all_authors(request):
-    authors = AuthorsModel.objects.filter(age__gte=80) # bu yerda men 80 yoshdan katta bo'lgan authorlarni chiqardim!!!
+    authors = AuthorsModel.objects.all() # bu yerda men 80 yoshdan katta bo'lgan authorlarni chiqardim!!!
     context = {
         'authors': authors
     }
